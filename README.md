@@ -33,8 +33,9 @@ The sorcerer's beauty will set your heart on fire... just like his fireballs.
 ----------
 
 ## Tips
-☝️ It's strongly advised to farm goblins in order to level up
-✌️ Don't forget to buy some potions and heal yourself through inventory
+☝️ It's strongly advised to farm goblins in order to level up.
+
+✌️ Don't forget to buy some potions and heal yourself through inventory.
 
 
 
