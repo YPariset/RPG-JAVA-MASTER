@@ -15,15 +15,21 @@ depuis une console via les commandes suivantes:
 you have choice between 3 fighter:
 
 * BARBARIAN 👨‍🎤
+
 A melee attacker with a hell of a mustache and an equally hellish temper.
+
 ----------
 
 * NINJA 🧑‍🎤
+
 A cold-hearted assassin who lives in the shadows. He specializes in his unique fighting technique, "Ninja Art".
+
 ----------
 
 * SORCERER 👩‍🎤
+
 The sorcerer's beauty will set your heart on fire... just like his fireballs.
+
 ----------
 
 ## Tips
