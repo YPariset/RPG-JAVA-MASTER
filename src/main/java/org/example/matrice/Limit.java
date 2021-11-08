@@ -23,7 +23,7 @@ public class Limit extends Movable {
 
     @Override
     public String affectedSymbol() {
-        return "🚪";
+        return "👾";
     }
 
     @Override
