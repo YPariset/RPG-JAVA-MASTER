@@ -4,7 +4,7 @@ import org.example.generator.DestructibleGenerator;
 import org.example.destructible.hero.Hero;
 import org.example.generator.ItemGenerator;
 import org.example.items.Inventory;
-import org.example.matrice.WorldMap;
+import org.example.matrice.Matrice;
 import org.example.utils.Shop;
 
 import java.util.Scanner;
@@ -24,12 +24,12 @@ public class App
                 "\n(you can always try to dodge them but good luck...)" +
                 "\nin order to face the supreme golem, a force the world has never seen.");
         Hero hero = DestructibleGenerator.createHero(sc);
-        WorldMap map = new WorldMap();
+        Matrice matrice = new Matrice();
         Shop shop = new Shop(new Inventory());
         shop.addItem(ItemGenerator.createPotion());
         shop.addItem(ItemGenerator.createSuperPotion());
         shop.addItem(ItemGenerator.createHyperPotion());
-        map.placeObject(hero);
-        Game.play(hero, map, shop, sc);
+        matrice.placeObject(hero);
+        Game.play(hero, matrice, shop, sc);
     }
 }

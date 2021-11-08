@@ -7,13 +7,13 @@ import org.example.generator.DestructibleGenerator;
 
 import java.util.Scanner;
 
-public class LimitWorld extends Movable {
+public class Limit extends Movable {
 
     /****************************************************/
     /***********           Constructor        ***********/
     /****************************************************/
 
-    public LimitWorld(int x, int y) {
+    public Limit(int x, int y) {
         super(x, y);
     }
 

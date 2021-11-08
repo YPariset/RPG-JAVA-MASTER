@@ -5,7 +5,7 @@ import org.example.generator.DestructibleGenerator;
 import java.util.Random;
 import java.util.Scanner;
 
-public class WorldMap {
+public class Matrice {
 
     /****************************************************/
     /*************** Attributes/Instances ***************/
@@ -20,7 +20,7 @@ public class WorldMap {
     /***********           Constructor        ***********/
     /****************************************************/
 
-    public WorldMap() {
+    public Matrice() {
         this.map = new Movable[LENGHT_X][LENGHT_Y];
         this.init();
     }
@@ -44,7 +44,7 @@ public class WorldMap {
         }
         this.map[0][0] = null;
         this.map[LENGHT_X - 1][LENGHT_Y - 1] = null;
-        LimitWorld limitWorld = new LimitWorld(LENGHT_X - 10, LENGHT_Y - 1);
+        Limit limitWorld = new Limit(LENGHT_X - 10, LENGHT_Y - 1);
         this.placeObject(limitWorld);
     }
 
@@ -57,7 +57,7 @@ public class WorldMap {
         String str = "You can move :";
 
         for (int i = 0; i < DIRECTION.length; i++) {
-            if (WorldMap.isValidMove(m, DIRECTION[i])) {
+            if (Matrice.isValidMove(m, DIRECTION[i])) {
                 str += "\n\t- " + DIRECTION[i];
             }
         }

@@ -50,8 +50,7 @@ public class DestructibleGenerator {
             System.out.println();
             System.out.println("(3). SORCERER");
             System.out.println("----------");
-            System.out.println("\n" +
-                    "The sorcerer's beauty will set your heart on fire... just like his fireballs.");
+            System.out.println("The sorcerer's beauty will set your heart on fire... just like his fireballs.");
             System.out.println();
             System.out.println("--------------------------------------------");
             System.out.print("Choose >: ");

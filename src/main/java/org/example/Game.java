@@ -4,7 +4,7 @@ import org.example.destructible.monster.Monster;
 import org.example.items.Item;
 import org.example.destructible.hero.Hero;
 import org.example.utils.Fight;
-import org.example.matrice.WorldMap;
+import org.example.matrice.Matrice;
 import org.example.utils.Shop;
 
 import java.util.Scanner;
@@ -21,7 +21,7 @@ public class Game {
      * @param m Map
      * @param sc Scanner
      */
-    private static void optionPlayer(Hero h, WorldMap m, Shop s, Scanner sc) throws InterruptedException {
+    private static void optionPlayer(Hero h, Matrice m, Shop s, Scanner sc) throws InterruptedException {
 
         String choice;
         Game.displayMap(m, h);
@@ -99,7 +99,7 @@ public class Game {
      * @param m Map
      * @param h Hero
      */
-    private static void displayMap(WorldMap m, Hero h) {
+    private static void displayMap(Matrice m, Hero h) {
         System.out.println("\n------------------------");
         System.out.println("\t\tZONE WAR");
         System.out.println(m);
@@ -113,7 +113,7 @@ public class Game {
      * @param m Map
      * @param sc Scanner
      */
-    public static void play(Hero h, WorldMap m, Shop s, Scanner sc) throws InterruptedException {
+    public static void play(Hero h, Matrice m, Shop s, Scanner sc) throws InterruptedException {
         while (!h.isDead()) {
             optionPlayer(h, m, s, sc);
             if ( h.hasWon() ) {

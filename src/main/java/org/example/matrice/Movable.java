@@ -38,8 +38,8 @@ public abstract class Movable {
      * @param direction Direction
      * @param sc Scanner
      */
-    public void moveTo(WorldMap worldMap, String direction, Scanner sc) throws InterruptedException {
-        if (WorldMap.isValidMove(this, direction)) {
+    public void moveTo(Matrice worldMap, String direction, Scanner sc) throws InterruptedException {
+        if (Matrice.isValidMove(this, direction)) {
             Point old = new Point(this.point.x, this.point.y);
 
             switch(direction) {
